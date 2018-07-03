@@ -21,6 +21,8 @@
     <img v-bind:src="imgSrc" alt="">
     <div v-bind:class="className">1、绑定classA</div>
     <div v-bind:class="{classA:isOk}">1、绑定classA中的判断</div>
+    <div :class="{classB:isOk}">2.绑定classB中的判断</div>
+    <div class="{isOk?:'classa':'classB'}">直接用class</div>
 </div>
 
 <script>
